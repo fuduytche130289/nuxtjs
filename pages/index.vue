@@ -66,7 +66,10 @@ export default {
     this.homeData =await this.$repositories.home.getHome(); //await this.$axios.get('/home');
     console.log(this.homeData)
   },
-  fetchOnServer: false
+  fetchOnServer: false,
+  mounted() {
+    this.$alert('hello')
+  }
 
 
 }
