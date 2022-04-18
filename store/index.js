@@ -1,23 +1,17 @@
 export const state = () => ({
   counter: 0,
-  homeData:[]
+  articleData:[]
 })
 
 export const actions = {
-  async getHome({commit}){
-    const data = await this.$repositories.home.getHome();
-    commit('setHomeData',data)
+  async getArticle({commit}){
+    const data = await this.$repositories.article.getArticle();
+    commit('setArticleData',data)
   }
 }
 
 export const mutations = {
-  increment(state){
-    state.counter++
-  },
-  decrement(state){
-    state.counter--
-  },
-  setHomeData(state,data){
-    state.homeData = data
+  setArticleData(state,data){
+    state.articleData = data
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="overflow-x-hidden bg-gray-100 container mx-auto">
     <Header/>
     <nuxt/>
     <Footer/>

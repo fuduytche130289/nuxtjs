@@ -25,8 +25,6 @@ export default {
   plugins: [
     '~/plugins/axios',
     '~/plugins/repositories',
-    {src: '~/plugins/alert', ssr: false},
-    {src: '~/plugins/v-tooltip', ssr: false}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -43,8 +41,8 @@ export default {
     '@nuxtjs/universal-storage'
   ],
   axios: {
-    baseURL: 'http://128.199.211.17/api/v1/',
-    browserBaseURL: 'http://128.199.211.17/api/v1/'
+    baseURL: 'https://newsapi.org/v2/everything',
+    browserBaseURL: 'https://newsapi.org/v2/everything'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

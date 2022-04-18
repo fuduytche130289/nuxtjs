@@ -1,7 +1,7 @@
-import HomeRepo from "./HomeRepo";
-import CategoryRepo from "./CategoryRepo";
+import ArticleRepo from "./ArticleRepo";
+
 
 export default ($axios) => ({
-  home: HomeRepo($axios),
-  category: CategoryRepo($axios)
+  article: ArticleRepo($axios),
+
 })
