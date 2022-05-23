@@ -25,6 +25,7 @@ export default {
   plugins: [
     '~/plugins/axios',
     '~/plugins/repositories',
+    '~/plugins/firebase'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -38,7 +39,7 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/universal-storage'
+    '@nuxtjs/universal-storage',
   ],
   axios: {
     baseURL: 'https://newsapi.org/v2/everything',
